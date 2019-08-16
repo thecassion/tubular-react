@@ -4,11 +4,11 @@ import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/styles/makeStyles';
 import * as React from 'react';
 import { useToggle } from 'uno-react';
-import FeatureSample from '../../../components/FeatureSample';
-import {AdvancedPagination, BasicPagination} from '../../../components/Options/Pagination';
-import TableOfContent from '../../../components/TableOfContent';
-import featuresStyles from '../../../utils/featuresStyles';
-import { advancedPaginationGrid, basicPaginationGrid } from '../../../utils/paginationCodeSamples';
+import FeatureSample from '../../components/FeatureSample';
+import {AdvancedPagination, BasicPagination} from '../../components/Options/Pagination';
+import TableOfContent from '../../components/TableOfContent';
+import featuresStyles from '../../utils/featuresStyles';
+import { advancedPaginationGrid, basicPaginationGrid } from '../../utils/paginationCodeSamples';
 
 const useStyles = makeStyles(featuresStyles);
 

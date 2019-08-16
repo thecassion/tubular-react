@@ -11,7 +11,6 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { MenuList, NavBar } from 'uno-material-ui';
 import { featurePaths } from '../utils/featuresPaths';
-import TubularLogo from '../static/tubular.png';
 
 const useStyles = makeStyles(({ palette }: any) => ({
     collapsable: {
@@ -52,7 +51,7 @@ export default () => {
 
     return (
         <React.Fragment>
-            <NavBar logo={TubularLogo} />
+            <NavBar logo={'/static/tubular.png'} />
             <MenuList>
                 <Link to='/tubular-react/' className={classes.link}>
                     <ListItem button={true}>

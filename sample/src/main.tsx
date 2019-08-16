@@ -9,8 +9,7 @@ import CustomLayoutDataGrid from './CustomLayoutDataGrid';
 import ErrorBoundary from './ErrorBoundary';
 import LocalDataGrid from './localDataGrid';
 import RemoteDataGrid from './remoteDataGrid';
-import RemoteGridList from './remoteGridList';
-import DataGridWithDialog from './DataGridWithDialog';
+import RemoteGridList from './RemoteGridList';
 
 const useStyles = makeStyles(({ palette }: any) => ({
   logo: {
@@ -27,7 +26,7 @@ const useStyles = makeStyles(({ palette }: any) => ({
 }));
 
 const Main: React.FunctionComponent = () => {
-  const classes = useStyles();
+  const classes = useStyles({});
   const [currentValue, setValue] = React.useState(0);
 
   const handleChange = (event: any, value: any) => setValue(value);

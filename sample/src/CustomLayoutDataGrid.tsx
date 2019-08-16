@@ -75,8 +75,9 @@ const CustomLayoutDataGrid: React.FunctionComponent = () => {
         <TableHead>
           <TableRow>
             <Paginator
-              component='div'
               grid={grid}
+              rowsPerPageOptions={toolbarOptions.rowsPerPageOptions}
+              advancePagination={toolbarOptions.advancePagination}
             />
           </TableRow>
         </TableHead>

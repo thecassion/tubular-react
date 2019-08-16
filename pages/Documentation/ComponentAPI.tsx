@@ -3,14 +3,14 @@ import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import makeStyles from '@material-ui/Styles/makeStyles';
+import makeStyles from '@material-ui/styles/makeStyles';
 import * as React from 'react';
 import Highlight from 'react-highlight';
-import ColumnModelList from '../../components/ColumnModelTable';
-import DataGridProps from '../../components/DataGridProps';
-import DataGridProviderProps from '../../components/DataGridProviderProps';
-import DataGridTableProps from '../../components/DataGridTableProps';
-import ToolBarOptionsProps from '../../components/ToolBarOptionsProps';
+import ColumnModelList from '../components/ColumnModelTable';
+import DataGridProps from '../components/DataGridProps';
+import DataGridProviderProps from '../components/DataGridProviderProps';
+import DataGridTableProps from '../components/DataGridTableProps';
+import ToolBarOptionsProps from '../components/ToolBarOptionsProps';
 
 const useStyles = makeStyles({
     codeTag: {

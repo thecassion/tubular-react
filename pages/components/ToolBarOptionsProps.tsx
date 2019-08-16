@@ -4,7 +4,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import makeStyles from '@material-ui/Styles/makeStyles';
+import makeStyles from '@material-ui/styles/makeStyles';
 import * as React from 'react';
 
 const useStyles = makeStyles({
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 export default () => {
-    const classes = useStyles();
+    const classes = useStyles({});
 
     return (
         <Paper className={classes.root}>

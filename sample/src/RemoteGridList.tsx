@@ -82,11 +82,6 @@ const RemoteGridList: React.FunctionComponent = () => {
             </TableCell>
           </TableRow>
         </TableBody>
-        <TableFooter>
-          <TableRow>
-            <Paginator grid={grid} />
-          </TableRow>
-        </TableFooter>
       </Table>
     </Paper>
   );

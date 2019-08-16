@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 export default () => {
-    const classes = useStyles();
+    const classes = useStyles({});
 
     return (
         <Paper className={classes.root}>
@@ -33,6 +33,21 @@ export default () => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
+                    <TableRow hover={true}>
+                        <TableCell><code className={classes.code}>gridName</code></TableCell>
+                        <TableCell><code className={classes.code}>string</code></TableCell>
+                        <TableCell>Grid</TableCell>
+                        <TableCell><strong>Optional</strong></TableCell>
+                    </TableRow>
+                    <TableRow hover={true}>
+                        <TableCell><code className={classes.code}>toolbarOptions</code></TableCell>
+                        <TableCell><code className={classes.code}>ToolbarOptions</code></TableCell>
+                        <TableCell><code className={classes.code}>new ToolBarOptions();</code></TableCell>
+                        <TableCell><strong>Optional.</strong>
+                            It should be an instance of ToolbarOptions. This encapsulates useful options.
+                            <em>see ToolBarOptions props</em>
+                        </TableCell>
+                    </TableRow>
                     <TableRow hover={true}>
                         <TableCell><code className={classes.code}>bodyRenderer</code></TableCell>
                         <TableCell><code className={classes.code}>function</code></TableCell>
@@ -66,6 +81,15 @@ export default () => {
                         <TableCell>
                             <strong>Optional.</strong>
                             Use this event handler to receive the clicked row.
+                        </TableCell>
+                    </TableRow>
+                    <TableRow hover={true}>
+                        <TableCell><code className={classes.code}>storage</code></TableCell>
+                        <TableCell><code className={classes.code}>IDataGridStorage</code></TableCell>
+                        <TableCell>LocalStorage</TableCell>
+                        <TableCell>
+                            <strong>Optional.</strong>
+                            Use this prop to set the settings storage.
                         </TableCell>
                     </TableRow>
                 </TableBody>

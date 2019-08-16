@@ -4,11 +4,11 @@ import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/styles/makeStyles';
 import * as React from 'react';
 import { useToggle } from 'uno-react';
-import { ToolbarOptions } from '../../../../src/Toolbar';
-import FeatureSample from '../../../components/FeatureSample';
-import TableOfContent from '../../../components/TableOfContent';
-import featuresStyles from '../../../utils/featuresStyles';
-import { localStorageGrid, nullStorageGrid } from '../../../utils/storageCodeSamples';
+import { ToolbarOptions } from '../../../src/Toolbar';
+import FeatureSample from '../../components/FeatureSample';
+import TableOfContent from '../../components/TableOfContent';
+import featuresStyles from '../../utils/featuresStyles';
+import { localStorageGrid, nullStorageGrid } from '../../utils/storageCodeSamples';
 
 const useStyles = makeStyles(featuresStyles);
 

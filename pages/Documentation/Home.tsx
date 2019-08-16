@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/styles/makeStyles';
 import * as React from 'react';
 import Highlight from 'react-highlight';
-import { basicFeatures } from '../../utils/codeSnipetExamples';
+import { simpleFeatures } from '../utils/codeSnipetExamples';
 
 const useStyles = makeStyles({
   code: {
@@ -221,7 +221,7 @@ export default () => {
           started:
             </Typography>
         <Highlight language='javascript' className={classes.code}>
-          {basicFeatures}
+          {simpleFeatures}
         </Highlight>
         <Typography variant='h5' paragraph={true}>
           Extend Grid Functionalities
@@ -253,7 +253,7 @@ const MyComponent = () => {
           Related projects
       </Typography>
         <Divider />
-        <Table className={classes.table}>
+        <Table>
           <TableHead>
             <TableRow>
               <TableCell>Name</TableCell>
